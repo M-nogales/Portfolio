@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* custom colors in to tailwind */
+@layer base {
+  :root {
+    --color-primary-50: #F2F8FD;
+    --color-primary-100: #E3EEFB;
+    --color-primary-200: #C1DDF6;
+    --color-primary-300: #8BC2EE;
+    --color-primary-400: #4DA2E3;
+    --color-primary-500: #2687D1;
+    --color-primary-600: #176AB2;
+    --color-primary-700: #145590;
+    --color-primary-800: #144673;
+    --color-primary-900: #173E63;
+    --color-primary-950: #0F2842;
+    --background: #E2E8F0; /* Color en modo claro */
+    --text-foreground: #F2F8FD;
+    --title-foreground: #C1DDF6;
+  }
+  [data-theme="dark"] {
+    --background: #0F2842; /* Color en modo oscuro */
+    --text-foreground: #176AB2;
+    --title-foreground: #176AB2;
+  }
+}
+
+/* font families */
+@font-face {
+  font-family: 'Coolvetica Condensed RG';
+  src: url('./assets/fonts/CoolveticaCondensedRG.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coolvetica RG It';
+  src: url('./assets/fonts/CoolveticaRGIt.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Coolvetica RG';
+  src: url('./assets/fonts/CoolveticaRG.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/fonts/Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Compressed';
+  src: url('./assets/fonts/helvetica-compressed-5871d14b6903a.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Light';
+  src: url('./assets/fonts/helvetica-light-587ebe5a59211.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Bold';
+  src: url('./assets/fonts/Helvetica-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
