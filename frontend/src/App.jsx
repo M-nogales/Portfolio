@@ -1,5 +1,8 @@
 import { useEffect } from 'react'
-
+import Home from './components/Home';
+import AboutMe from './components/AboutMe';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
 function App() {
 
   useEffect(() => {
@@ -16,15 +19,19 @@ function App() {
     <>
       {/* home */}
       <section>
+        <Home />
       </section>
       {/* skills */}
       <section>
+        <Skills />
       </section>
       {/* Projects */}
       <section>
+        <Projects />
       </section>
       {/* about me */}
       <section>
+        <AboutMe />
       </section>
     </>
   )
