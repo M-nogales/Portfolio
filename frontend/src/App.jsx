@@ -14,8 +14,18 @@ function App() {
 
   return (
     <>
-    <div>
-    </div>
+      {/* home */}
+      <section>
+      </section>
+      {/* skills */}
+      <section>
+      </section>
+      {/* Projects */}
+      <section>
+      </section>
+      {/* about me */}
+      <section>
+      </section>
     </>
   )
 }
