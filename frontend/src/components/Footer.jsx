@@ -1,7 +1,10 @@
-
 const Footer = () => {
+  // sadas
   return (
-    <div>Footer</div>
+    <footer className="flex items-center justify-between">
+  
+    </footer>
+    
   )
 }
 
