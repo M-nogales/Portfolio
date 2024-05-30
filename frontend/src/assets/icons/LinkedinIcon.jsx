@@ -1,7 +1,7 @@
 export const LinkedinIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="w-6 h-6"
+    className="w-7 h-7 hover:fill-blue-400"
     fill="currentColor"
     viewBox="0 0 16 16"
   >

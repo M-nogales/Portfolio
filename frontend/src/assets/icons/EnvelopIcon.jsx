@@ -1,7 +1,7 @@
 export const EnvelopIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="w-6 h-6"
+    className="w-8 h-8 hover:fill-red-600"
     fill="currentColor"
     viewBox="0 0 16 16"
   >
