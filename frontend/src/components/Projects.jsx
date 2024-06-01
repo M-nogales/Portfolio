@@ -6,7 +6,7 @@ const Projects = () => {
       BayGaming
       ilernastaff?
       working(spotify api consults)
-      working(component library)
+      working(2nd e-commerce)
     </div>
   )
 }
