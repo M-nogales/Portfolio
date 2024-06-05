@@ -6,10 +6,9 @@ import { ReactIcon } from "../assets/icons/ReactIcon";
 import { TailwindCSSIcon } from "../assets/icons/TailwindCSSIcon";
 
 const Skills = () => {
-
   return (
-    <div className="flex flex-row">
-      <article className="grid grid-rows-2 grid-flow-col gap-x-2 w-full md:w-2/5 mx-4 lg:mx-8">
+    <div className="flex flex-col md:flex-row gap-2 mx-4 lg:mx-8">
+      <article className="grid grid-rows-2 grid-flow-col gap-x-2 w-full md:w-2/5">
         <div className="mb-1 h-30 text-center text-white rounded-lg bg-red-500 flex flex-col ">
           Frontend
           <div className="mt-1 w-full flex flex-row justify-evenly">
@@ -44,10 +43,35 @@ const Skills = () => {
           </div>
         </div>
       </article>
-      <article className="bg-purple-600 md:block hidden w-3/5 h-full">
-        project
-      </article>
 
+      <article className="flex justify-evenly w-full md:w-3/5 h-40 group rounded-lg bg-red-500">
+        <div className="flex flex-col">
+          <h2 className="text-lg md:text-xl font-bold text-white">Experiencia</h2>
+          <ul>
+            <li>
+              <p className="text-base font-semibold text-slate-800">Scholar in Ayesa</p>
+            </li>
+            <li>
+            <p className="text-sm">Marzo.24-Junio.24</p>
+            </li>
+
+          </ul>
+        </div>
+        <div className="flex flex-col">
+          <h2 className="text-xl font-bold text-white">Education</h2>
+          <ul className="*:text-lg">
+            <li className="text-pretty">
+              <p>Grado Superior en DAW</p>
+            </li>
+            <li>
+              <p>Centro ILERNA-SEVILLA</p>
+            </li>
+            <li>
+              <p>2022-2024</p>
+            </li>
+          </ul>
+        </div>
+      </article>
       {/* <p>frontend: React figma tailwind</p>
       <p>backend: express mongoDB</p>
       <h3>Otra tecnologias que he utilizado</h3>

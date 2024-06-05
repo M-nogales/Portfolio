@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const NavContent = ({content}) => {
   // nombre del data no del object
   console.log(content);
