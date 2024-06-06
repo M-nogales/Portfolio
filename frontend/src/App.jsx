@@ -28,7 +28,7 @@ function App() {
       </section>
       {/* Projects */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-2 mt-2 mx-4 lg:mx-8">
-        <Projects  url="https://pagedone.io/asset/uploads/1688031162.jpg">
+        <Projects url="https://pagedone.io/asset/uploads/1688031162.jpg">
           <ReactIcon/>
         </Projects>
         <Projects></Projects>

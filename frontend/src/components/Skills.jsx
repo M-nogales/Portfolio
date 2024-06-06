@@ -1,9 +1,11 @@
-import { ExpressIcon } from "../assets/icons/ExpressIcon";
-import { GithubIcon } from "../assets/icons/GithubIcon";
-import { JavaScriptIcon } from "../assets/icons/JavaScriptIcon";
-import { MongoDBIcon } from "../assets/icons/MongoDBIcon";
-import { ReactIcon } from "../assets/icons/ReactIcon";
-import { TailwindCSSIcon } from "../assets/icons/TailwindCSSIcon";
+import {
+  ExpressIcon,
+  GithubIcon,
+  JavaScriptIcon,
+  MongoDBIcon,
+  ReactIcon,
+  TailwindCSSIcon,
+} from "../assets/icons/Languages";
 
 const Skills = () => {
   return (
@@ -44,29 +46,45 @@ const Skills = () => {
         </div>
       </article>
 
-      <article className="flex justify-evenly w-full md:w-3/5 h-40 group rounded-lg bg-red-500">
+      <article className="flex justify-evenly w-full md:w-3/12 h-28 md:h-40 group rounded-lg bg-red-500">
         <div className="flex flex-col">
-          <h2 className="text-lg md:text-xl font-bold text-white">Experiencia</h2>
-          <ul>
-            <li>
-              <p className="text-base font-semibold text-slate-800">Scholar in Ayesa</p>
-            </li>
-            <li>
-            <p className="text-sm">Marzo.24-Junio.24</p>
-            </li>
-
-          </ul>
+          <h2 className="text-lg text-center md:text-xl font-bold text-white">
+            Experiencia
+          </h2>
+          <div className="flex mt-2.5 h-full md:mt-0 md:mb-5 md:items-center">
+            <picture>
+              <img
+                className="w-10 h-10 me-1"
+                src="https://media.licdn.com/dms/image/D4D0BAQG1BhZEpMiAVQ/company-logo_200_200/0/1706799581320/ayesa_logo?e=1725494400&v=beta&t=bEx9HfdNJOUVHgNm52UFcsOeev2XHQDBoZtdWKk_Ots"
+                alt="Ayesa Logo"
+              />
+            </picture>
+            <ul>
+              <li>
+                <p className="text-base font-semibold text-slate-800">
+                  Scholar in Ayesa
+                </p>
+              </li>
+              <li>
+                <p className="text-sm">Marzo.24-Junio.24</p>
+              </li>
+            </ul>
+          </div>
         </div>
+      </article>
+      <article className="flex justify-evenly w-full md:w-4/12 h-40 group rounded-lg bg-green-500">
         <div className="flex flex-col">
-          <h2 className="text-xl font-bold text-white">Education</h2>
-          <ul className="*:text-lg">
-            <li className="text-pretty">
-              <p>Grado Superior en DAW</p>
+          <h2 className="text-xl text-center font-bold text-white">
+            Education
+          </h2>
+          <ul className="p-2 ps-3 md:p-1 lg:ps-3 mt-1 *:text-left">
+            <li className="text-pretty text-xl md:text-lg lg:text-xl">
+              <p>Grado Superior en Desarrollo de Aplicaciones Web (DAW)</p>
             </li>
-            <li>
+            <li className="text-lg md:text-sm lg:text-lg">
               <p>Centro ILERNA-SEVILLA</p>
             </li>
-            <li>
+            <li className="text-base md:text-sm lg:text-base">
               <p>2022-2024</p>
             </li>
           </ul>
