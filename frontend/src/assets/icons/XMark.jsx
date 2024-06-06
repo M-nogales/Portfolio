@@ -1,6 +1,7 @@
-export const XMark = () => (
+/* eslint-disable react/prop-types */
+export const XMark = ({className}) => (
   <svg
-    className="h-6 w-6"
+    className={className}
     fill="none"
     viewBox="0 0 24 24"
     strokeWidth="1.5"

@@ -8,7 +8,7 @@ const Projects = ({url,children}) => {
       <article className="group grid w-full place-content-center rounded-lg">
         <picture className="relative overflow-hidden rounded-lg">
           <img
-            className="rounded-lg transition-all duration-300 group-hover:scale-110"
+            className="rounded-lg transition-all duration-300 group-hover:scale-110 group-hover:brightness-50"
             src="https://pagedone.io/asset/uploads/1688031162.jpg"
             alt={url}
           />

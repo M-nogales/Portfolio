@@ -1,6 +1,5 @@
-import { GithubIcon } from "../assets/icons/GithubIcon.jsx";
-import { LinkedinIcon } from "../assets/icons/LinkedinIcon.jsx";
-import { EnvelopIcon } from "../assets/icons/EnvelopIcon.jsx";
+import { GithubIcon } from "../assets/icons/Languages";
+import { LinkedinIcon, EnvelopIcon } from "../assets/icons/SocialMedia.jsx";
 
 const Footer = () => {
   // sadas
