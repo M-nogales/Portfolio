@@ -4,6 +4,10 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import { ReactIcon, RedisIcon, SocketIcon } from "./assets/icons/Languages";
 import { EmailModal } from "./components/EmailModal";
+
+
+// https://tailwindcss-animations.vercel.app/
+// https://console.cloud.google.com/marketplace/product/google/gmail.googleapis.com?pli=1
 function App() {
   useEffect(() => {
     const prefersDarkScheme = window.matchMedia(
