@@ -22,14 +22,14 @@ const Home = () => {
         className="w-32 h-32 md:w-60 md:h-60 ring-4 border-emerald-400 rounded-full"
       />
       <h1 className="text-xl text-wrap font-semibold mx-4 md:mx-8 md:text-2xl ">
-        Hi!, I`m M-nogales! and I`m...
+        Hi!, I`m M-nogales! and I`m... 
       </h1>
       <p className="mx-4 md:mx-8 text-wrap text-center">
         <span ref={typingRef}></span>
       </p>
       <footer className="m-6 flex gap-x-2 items-center">
-        <a className="p-4 rounded-lg bg-blue-600">
-          <DownloadIcon className={"w-8 h-8 fill-white"} />
+        <a className="px-6 py-3 rounded-lg bg-blue-600 flex gap-x-2">
+          <DownloadIcon className={"w-5 h-5 fill-black"} />
           CV
         </a>
         <a href="http://google.com" target="_blank" rel="noopener noreferrer">

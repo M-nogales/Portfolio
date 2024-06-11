@@ -34,11 +34,11 @@ function App() {
           <RedisIcon className="w-8 h-10 fill-white" />
           <SocketIcon className="w-8 h-10 fill-white" />
         </Projects>
-        <Projects></Projects>
-        <Projects></Projects>
-        <Projects></Projects>
+        <Projects projectName={"BayGaming"}></Projects>
+        <Projects projectName={"Soundfy"}></Projects>
+        <Projects projectName={""}></Projects>
       </section>
-      <EmailModal></EmailModal>
+      <EmailModal ></EmailModal>
     </>
   );
 }
