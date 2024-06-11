@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { HamburguerMenu } from "../assets/icons/HamburguerMenu.jsx";
-import { XMark } from "../assets/icons/XMark.jsx";
+import { HamburguerMenu, XMark } from "../assets/icons/Utilities";
 
 import NavContent from "./NavContent.jsx";
 const Navbar = () => {
@@ -21,7 +20,7 @@ const Navbar = () => {
         onClick={() => setIsModalOpen(!isModalOpen)}
       >
         {/* Hamburguer icon or Xmark with click */}
-        {!isModalOpen ? <HamburguerMenu /> : <XMark />}
+        {!isModalOpen ? <HamburguerMenu className={"w-8 h-8"}/> : <XMark className={"w-8 h-8"}/>}
       </button>
       {isModalOpen && (
         <div

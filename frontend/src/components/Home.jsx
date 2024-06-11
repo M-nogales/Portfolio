@@ -1,8 +1,8 @@
 import MyImage from "../assets/manu.png";
 import { GithubIcon } from "../assets/icons/Languages";
-import { LinkedinIcon } from "../assets/icons/SocialMedia";
-import { EnvelopIcon } from "../assets/icons/SocialMedia";
+import { LinkedinIcon, EnvelopIcon } from "../assets/icons/SocialMedia";
 import useTyping from "../Hooks/Typing";
+import { DownloadIcon } from "../assets/icons/Utilities";
 
 const Home = () => {
   const typingRef = useTyping(
@@ -28,15 +28,18 @@ const Home = () => {
         <span ref={typingRef}></span>
       </p>
       <footer className="m-6 flex gap-x-2 items-center">
-        <a className="p-4 rounded-lg bg-blue-600">CV+icnDOWN</a>
-        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-          <GithubIcon  className={"w-8 h-8 fill-black"}/>
+        <a className="p-4 rounded-lg bg-blue-600">
+          <DownloadIcon className={"w-8 h-8 fill-white"} />
+          CV
         </a>
         <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-          <LinkedinIcon  className={"w-8 h-8 fill-black"}/>
+          <GithubIcon className={"w-8 h-8 fill-black"} />
         </a>
         <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-          <EnvelopIcon className={"w-8 h-8 fill-black"}/>
+          <LinkedinIcon className={"w-8 h-8 fill-black"} />
+        </a>
+        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+          <EnvelopIcon className={"w-8 h-8 fill-black"} />
         </a>
       </footer>
     </section>

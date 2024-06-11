@@ -38,7 +38,7 @@ function App() {
         <Projects></Projects>
         <Projects></Projects>
       </section>
-      <EmailModal show></EmailModal>
+      <EmailModal></EmailModal>
     </>
   );
 }
