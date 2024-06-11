@@ -1,7 +1,8 @@
-export const LinkedinIcon = () => (	
+export const LinkedinIcon = ({className}) => (	
   <svg	
     xmlns="http://www.w3.org/2000/svg"	
-    className="w-7 h-7 hover:fill-blue-400"	
+    // "w-7 h-7 hover:fill-blue-400"
+    className={className}	
     fill="currentColor"	
     viewBox="0 0 16 16"	
   >	
@@ -9,10 +10,11 @@ export const LinkedinIcon = () => (
   </svg>	
 );
 // Envelop for gmail
-export const EnvelopIcon = () => (
+export const EnvelopIcon = ({className}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="w-8 h-8 hover:fill-red-600"
+    // "w-8 h-8 hover:fill-red-600"
+    className={className}
     fill="currentColor"
     viewBox="0 0 16 16"
   >
