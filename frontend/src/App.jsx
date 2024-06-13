@@ -6,7 +6,6 @@ import { ReactIcon, RedisIcon, SocketIcon } from "./assets/icons/Languages";
 import { EmailModal } from "./components/EmailModal";
 import Experience from "./components/Experience";
 
-
 // https://tailwindcss-animations.vercel.app/
 // https://console.cloud.google.com/marketplace/product/google/gmail.googleapis.com?pli=1
 function App() {
@@ -33,21 +32,25 @@ function App() {
         <Skills />
       </section>
       <section>
-      {/* Experience */}
-      <Experience/>
+        {/* Experience */}
+        <Experience />
       </section>
       {/* Projects */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-2 mt-2 mx-4 lg:mx-8">
-        <Projects url="https://pagedone.io/asset/uploads/1688031162.jpg" projectName={"KindMail"}>
+        <Projects
+          url={"https://pagedone.io/asset/uploads/1688031162.jpg"}
+          projectName={"KindMail"}
+          description={`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui excepturi doloribus sit fugit delectus! Nostrum eligendi doloribus blanditiis? Reiciendis quasi praesentium accusamus illo? Accusamus voluptatem ad labore quisquam, sint eum!`}
+        >
           <ReactIcon className="w-8 h-10 fill-white" />
           <RedisIcon className="w-8 h-10 fill-white" />
           <SocketIcon className="w-8 h-10 fill-white" />
         </Projects>
-        <Projects projectName={"BayGaming"}></Projects>
-        <Projects projectName={"Soundfy"}></Projects>
-        <Projects projectName={""}></Projects>
+        <Projects url={"https://pagedone.io/asset/uploads/1688031162.jpg"} projectName={"BayGaming"}></Projects>
+        <Projects url={"https://pagedone.io/asset/uploads/1688031162.jpg"} projectName={"Soundfy"}></Projects>
+        <Projects url={"https://pagedone.io/asset/uploads/1688031162.jpg"} projectName={""}></Projects>
       </section>
-      <EmailModal ></EmailModal>
+      <EmailModal show></EmailModal>
     </>
   );
 }
