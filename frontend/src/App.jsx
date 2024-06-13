@@ -4,6 +4,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import { ReactIcon, RedisIcon, SocketIcon } from "./assets/icons/Languages";
 import { EmailModal } from "./components/EmailModal";
+import Experience from "./components/Experience";
 
 
 // https://tailwindcss-animations.vercel.app/
@@ -30,6 +31,10 @@ function App() {
       {/* skills */}
       <section>
         <Skills />
+      </section>
+      <section>
+      {/* Experience */}
+      <Experience/>
       </section>
       {/* Projects */}
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-2 mt-2 mx-4 lg:mx-8">
