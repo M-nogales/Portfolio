@@ -14,7 +14,7 @@ const Experience = () => {
         <ol className="relative border-s border-gray-200 dark:border-gray-700">
           {EXPERIENCE.map((experience, index) => (
             <li key={index} className="mb-10 ms-6">
-              <span className="absolute flex items-center justify-center w-3 h-3 bg-blue-100 rounded-full -start-1.5 top-2.5 dark:bg-blue-900"></span>
+              <span className="absolute flex items-center justify-center w-3 h-3 bg-blue-100 rounded-full -start-1.5 top-1.5 dark:bg-blue-900"></span>
               <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-gray-400">
                 {experience.title}
               </h3>

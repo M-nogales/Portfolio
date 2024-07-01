@@ -2,13 +2,16 @@ import { useState } from "react";
 import { XMark } from "../assets/icons/Utilities";
 
 /* eslint-disable react/prop-types */
+// show bolean shows or not modal, onClose function changes show State
 export const EmailModal = ({ show, onClose }) => {
   const [formData, setFormData] = useState({
     fullName: "",
     subject: "",
     message: "",
   });
-  //cada vez que cambiamos algo en un input dejamos formDara igual menos la posición del array que queremos cambiar y su valor
+  // if (!show) return null; if i wanted to delete   "show && ("
+
+  //every time anything change in the inputs we let formData equeal than before except the array position that we want to change and his value
   const handleOnChange = (e) => {
     setFormData({
       ...formData,
@@ -30,16 +33,14 @@ export const EmailModal = ({ show, onClose }) => {
       subject: "",
       message: "",
     });
-  };
-  const Close = () => {
-    console.log("closed");
+    onClose();
   };
   //   para hacer close bien añadir required en casode que alguno de los valores esté vacio si no close, max Message/subject/full Name
   return (
     show && (
       <div className="fixed inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
         <div className="bg-white dark:bg-black p-4 pt-2 grid rounded-lg w-1/2">
-          <button className="px-4 py-2 rounded place-self-end" onClick={Close}>
+          <button className="py-2 rounded place-self-end" onClick={onClose}>
             <XMark className={"w-6 h-6 fill-black"} />
           </button>
           <form onSubmit={handleSubmit}>
@@ -98,12 +99,12 @@ export const EmailModal = ({ show, onClose }) => {
             </div>
             <div className="w-full mt-16 flex justify-center">
               <button
-                className="ring-2 ring-green-500 text-black px-4 py-2 rounded w-1/2"
-                onClick={onClose}
+                className="ring-2 ring-blue-500 text-white px-4 py-2 rounded w-1/2"
               >
                 Submit
               </button>
-              <button className="mx-2 py-2 px-4 hover:underline underline-offset-3 decoration-2 decoration-red-400 text-red-400 w-1/2">
+              <button className="mx-2 py-2 px-4 hover:underline underline-offset-3 decoration-2 decoration-red-400 text-red-400 w-1/2"
+              onClick={onClose}>
                 Cancel
               </button>
             </div>

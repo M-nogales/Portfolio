@@ -1,4 +1,4 @@
-import { ArrowUpRightIcon } from "../assets/icons/Utilities";
+import { ArrowIcon } from "../assets/icons/Utilities";
 
 /* eslint-disable react/prop-types */
 const Projects = ({url, alt, children, projectName, description}) => {
@@ -14,7 +14,7 @@ const Projects = ({url, alt, children, projectName, description}) => {
             src={url}
             alt={alt}
           />
-          <button className="bg-gray-500 text-white absolute top-7 right-8 rounded-md py-2 px-4 hidden group-hover:block"><ArrowUpRightIcon className={"w-6 h-6 fill-white"}/></button>
+          <button className="bg-gray-500 text-white absolute top-7 right-8 rounded-full py-2 px-4 hidden group-hover:block"><ArrowIcon className={"w-6 h-6 fill-white origin-center -rotate-45"}/></button>
           <p className="text-white absolute top-1/3 left-8 me-3 hidden group-hover:block">
           {description}
           </p>

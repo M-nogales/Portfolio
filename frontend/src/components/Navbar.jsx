@@ -4,7 +4,7 @@ import { HamburguerMenu, XMark } from "../assets/icons/Utilities";
 import NavContent from "./NavContent.jsx";
 const Navbar = () => {
   const content = {
-    text: ["Home", "Skills", "Projects", "About me"],
+    text: ["Home", "Experience", "Projects", "About me"],
     link: ["google.com"],
   };
   const [isModalOpen, setIsModalOpen] = useState(false);

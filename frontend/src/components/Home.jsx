@@ -22,24 +22,36 @@ const Home = () => {
         className="w-32 h-32 md:w-60 md:h-60 ring-4 border-emerald-400 rounded-full"
       />
       <h1 className="text-xl text-wrap font-semibold mx-4 md:mx-8 md:text-2xl ">
-        Hi!, I`m M-nogales! and I`m... 
+        Hi!, I&apos;m M-nogales! and I&apos;m...
       </h1>
       <p className="mx-4 md:mx-8 text-wrap text-center">
         <span ref={typingRef}></span>
       </p>
       <footer className="m-6 flex gap-x-2 items-center">
-        <a className="px-6 py-3 rounded-lg bg-blue-600 flex gap-x-2">
-          <DownloadIcon className={"w-5 h-5 fill-black"} />
-          CV
+        <a className="ps-6 pe-4 py-3 rounded-lg text-dark ring-2 ring-blue-600 flex gap-x-2 " href="../assets/CV" download="../assets/CV">
+          Download CV
+          <DownloadIcon className={" ms-2 w-5 h-5 fill-black"} />
         </a>
         <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-          <GithubIcon className={"w-8 h-8 fill-black hover:fill-purple-600 hover:scale-110 transition-all duration-100"} />
+          <GithubIcon
+            className={
+              "w-8 h-8 fill-black hover:fill-purple-600 hover:scale-110 transition-all duration-100"
+            }
+          />
         </a>
         <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-          <LinkedinIcon className={"w-8 h-8 fill-black hover:fill-blue-400 hover:scale-110 transition-all duration-100"} />
+          <LinkedinIcon
+            className={
+              "w-8 h-8 fill-black hover:fill-blue-400 hover:scale-110 transition-all duration-100"
+            }
+          />
         </a>
         <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-          <EnvelopIcon className={"w-8 h-8 fill-black hover:fill-red-600 hover:scale-110 transition-all duration-100"} />
+          <EnvelopIcon
+            className={
+              "w-8 h-8 fill-black hover:fill-red-600 hover:scale-110 transition-all duration-100"
+            }
+          />
         </a>
       </footer>
     </section>

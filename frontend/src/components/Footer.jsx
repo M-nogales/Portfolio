@@ -4,7 +4,7 @@ import { LinkedinIcon, EnvelopIcon } from "../assets/icons/SocialMedia.jsx";
 const Footer = () => {
   // sadas
   return (
-    <footer className="flex flex-col sm:flex-row items-center justify-around sm:mx-10 my-4">
+    <footer className="flex flex-col sm:flex-row items-center justify-around sm:mx-10 mt-10 mb-4">
       {/* social media group */}
       <p className="text-lg font-medium">Created by M-nogales with 🍭</p>
       <div className="flex justify-evenly gap-4">

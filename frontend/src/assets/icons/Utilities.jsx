@@ -70,7 +70,7 @@ export const SendIcon = ({ className }) => (
   </svg>
 );
 
-export const ArrowUpRightIcon = ({ className }) => (
+export const ArrowIcon = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className={className}
@@ -79,7 +79,7 @@ export const ArrowUpRightIcon = ({ className }) => (
   >
     <path
       fillRule="evenodd"
-      d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"
+      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
     />
   </svg>
 );
