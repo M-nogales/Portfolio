@@ -15,13 +15,14 @@
     --color-primary-800: #144673;
     --color-primary-900: #173e63;
     --color-primary-950: #0f2842;
-    --background: #e2e8f0; /* Color en modo claro */
-    --text-foreground: #f2f8fd;
+    --background: #f2f8fd;
+    --text-foreground: #0B1E31;
     --title-foreground: #c1ddf6;
+    --accent-color:#2687d1
   }
   [data-theme="dark"] {
-    --background: #0f2842; /* Color en modo oscuro */
-    --text-foreground: #176ab2;
+    --background: #0f2842;
+    --text-foreground: #e3eefb;
     --title-foreground: #176ab2;
   }
 

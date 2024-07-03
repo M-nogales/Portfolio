@@ -4,15 +4,15 @@ import { HamburguerMenu, XMark } from "../assets/icons/Utilities";
 import NavContent from "./NavContent.jsx";
 const Navbar = () => {
   const content = {
-    text: ["Home", "Experience", "Projects", "About me"],
+    text: ["Home", "About me", "Experience", "Projects"],
     link: ["google.com"],
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
   console.log("modal" + isModalOpen);
   console.log("content nav" + JSON.stringify(content));
   return (
-    <header className="w-full h-16 bg-primary-950 mb-9 flex items-center justify-end md:justify-evenly">
-      <div className="hidden sm:block"><NavContent content={content}></NavContent></div>
+    <header className="w-full mt-1 mb-9 bg-transparent flex items-center justify-end md:justify-center">
+      <nav className="hidden sm:block"><NavContent content={content}></NavContent></nav>
       {/* <!-- Mobile menu button--> */}
       <button
         type="button"

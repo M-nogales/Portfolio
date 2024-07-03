@@ -24,7 +24,7 @@ const Projects = ({url, alt, children, projectName, description}) => {
               {projectName}
             </h2>
             {/* finish this */}
-            <div className="mt-2 text-lg uppercase tracking-wider flex gap-x-2 text-blue-500 dark:text-blue-400">
+            <div className="mt-2 flex gap-x-2">
             {children}
             </div>
           </footer>

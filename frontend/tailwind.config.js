@@ -23,6 +23,7 @@ export default {
         background: "var(--background)",
         textForeground: "var(--text-foreground)",
         titleForeground: "var(--title-foreground)",
+        accentColor:"var(--accent-color)"
 
       },
 

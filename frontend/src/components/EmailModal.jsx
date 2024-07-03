@@ -38,10 +38,10 @@ export const EmailModal = ({ show, onClose }) => {
   //   para hacer close bien añadir required en casode que alguno de los valores esté vacio si no close, max Message/subject/full Name
   return (
     show && (
-      <div className="fixed inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
+      <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-50">
         <div className="bg-white dark:bg-black p-4 pt-2 grid rounded-lg w-1/2">
           <button className="py-2 rounded place-self-end" onClick={onClose}>
-            <XMark className={"w-6 h-6 fill-black"} />
+            <XMark className={"w-6 h-6 text-black dark:text-white"} />
           </button>
           <form onSubmit={handleSubmit}>
             <div className="relative z-0 w-full mb-5 group">
@@ -99,11 +99,11 @@ export const EmailModal = ({ show, onClose }) => {
             </div>
             <div className="w-full mt-16 flex justify-center">
               <button
-                className="ring-2 ring-blue-500 text-white px-4 py-2 rounded w-1/2"
+                className="ring-2 ring-primary-400 hover:bg-primary-400 dark:ring-primary-500 dark:hover:bg-primary-500 text-textForeground px-4 py-2 rounded w-1/2"
               >
                 Submit
               </button>
-              <button className="mx-2 py-2 px-4 hover:underline underline-offset-3 decoration-2 decoration-red-400 text-red-400 w-1/2"
+              <button className="mx-2 py-2 px-4 hover:underline underline-offset-3 decoration-2 decoration-red-600 text-red-600 w-1/2"
               onClick={onClose}>
                 Cancel
               </button>

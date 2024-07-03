@@ -19,37 +19,37 @@ const Home = () => {
       <img
         src={MyImage}
         alt="Literally me"
-        className="w-32 h-32 md:w-60 md:h-60 ring-4 border-emerald-400 rounded-full"
+        className="w-32 h-32 md:w-60 md:h-60 ring-4 border-primary-400 rounded-full"
       />
-      <h1 className="text-xl text-wrap font-semibold mx-4 md:mx-8 md:text-2xl ">
+      <h1 className="text-xl text-wrap font-semibold mt-4 mb-2 mx-4 md:mx-8 md:text-2xl text-textForeground">
         Hi!, I&apos;m M-nogales! and I&apos;m...
       </h1>
-      <p className="mx-4 md:mx-8 text-wrap text-center">
+      <p className="mx-4 md:mx-8 text-wrap text-center text-textForeground">
         <span ref={typingRef}></span>
       </p>
       <footer className="m-6 flex gap-x-2 items-center">
-        <a className="ps-6 pe-4 py-3 rounded-lg text-dark ring-2 ring-blue-600 flex gap-x-2 " href="../assets/CV" download="../assets/CV">
+        <a className="ps-6 pe-4 py-3 rounded-lg text-textForeground hover:bg-primary-400 hover:text-white ring-2 ring-primary-400 flex gap-x-2 " href="../assets/CV" download="../assets/CV">
           Download CV
-          <DownloadIcon className={" ms-2 w-5 h-5 fill-black"} />
+          <DownloadIcon className={" ms-2 w-5 h-5 fill-current "} />
         </a>
         <a href="http://google.com" target="_blank" rel="noopener noreferrer">
           <GithubIcon
             className={
-              "w-8 h-8 fill-black hover:fill-purple-600 hover:scale-110 transition-all duration-100"
+              "w-8 h-8 text-textForeground hover:fill-purple-600 hover:scale-110 transition-all duration-100"
             }
           />
         </a>
         <a href="http://google.com" target="_blank" rel="noopener noreferrer">
           <LinkedinIcon
             className={
-              "w-8 h-8 fill-black hover:fill-blue-400 hover:scale-110 transition-all duration-100"
+              "w-8 h-8 text-textForeground hover:fill-blue-400 hover:scale-110 transition-all duration-100"
             }
           />
         </a>
         <a href="http://google.com" target="_blank" rel="noopener noreferrer">
           <EnvelopIcon
             className={
-              "w-8 h-8 fill-black hover:fill-red-600 hover:scale-110 transition-all duration-100"
+              "w-8 h-8 text-textForeground hover:fill-red-600 hover:scale-110 transition-all duration-100"
             }
           />
         </a>

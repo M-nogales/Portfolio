@@ -13,7 +13,7 @@ export const DownloadIcon = ({ className }) => (
 export const XMark = ({ className }) => (
   <svg
     className={className}
-    fill="none"
+    fill="current"
     viewBox="0 0 24 24"
     strokeWidth="1.5"
     stroke="currentColor"

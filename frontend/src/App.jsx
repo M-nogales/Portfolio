@@ -26,7 +26,6 @@ function App() {
       {/* home */}
       <Home />
 
-      <h2 className="text-3xl font-bold my-8 mx-8 lg:mx-16">About Me</h2>
       <AboutMe/>
 
       {/* skills */}
@@ -34,33 +33,20 @@ function App() {
         <Skills />
       </section> */}
       {/* Experience */}
-      <h2 className="text-3xl font-bold my-8 mx-8 lg:mx-16">Experience</h2>
       <Experience />
 
       {/* Projects */}
-      <h2 className="text-3xl font-bold my-8 mx-8 lg:mx-16">Projects</h2>
-      <section className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 mt-2 mx-8 lg:mx-16">
+      <h2 className="text-textForeground text-3xl font-bold m-8 mb-4 lg:m-16 lg:mb-4">Projects</h2>
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-8 lg:mx-16">
         <Projects
           url={"https://pagedone.io/asset/uploads/1688031162.jpg"}
           projectName={"KindMail"}
-          description={`Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui excepturi doloribus sit fugit delectus! Nostrum eligendi doloribus blanditiis?`}
+          description={`My final year project involved utilizing Redis and Socket.io (WebSockets) to develop a real-time chat application.`}
         >
-          <ReactIcon className="w-8 h-10 fill-white" />
-          <RedisIcon className="w-8 h-10 fill-white" />
-          <SocketIcon className="w-8 h-10 fill-white" />
+          <ReactIcon className="w-8 h-10 fill-accentColor" />
+          <RedisIcon className="w-8 h-10 fill-accentColor" />
+          <SocketIcon className="w-8 h-10 fill-accentColor" />
         </Projects>
-        <Projects
-          url={"https://pagedone.io/asset/uploads/1688031162.jpg"}
-          projectName={"BayGaming"}
-        ></Projects>
-        <Projects
-          url={"https://pagedone.io/asset/uploads/1688031162.jpg"}
-          projectName={"Soundfy"}
-        ></Projects>
-        <Projects
-          url={"https://pagedone.io/asset/uploads/1688031162.jpg"}
-          projectName={""}
-        ></Projects>
       </section>
     </main>
   );
