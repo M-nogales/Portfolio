@@ -1,10 +1,13 @@
 import { useEffect } from "react";
+
 import Home from "./components/Home";
-import Projects from "./components/Projects";
-import { ReactIcon, RedisIcon, SocketIcon } from "./assets/icons/Languages";
-// import Skills from "./components/Skills";
-import Experience from "./components/Experience";
 import { AboutMe } from "./components/AboutMe";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+// import Skills from "./components/Skills";
+
+import { ReactIcon, RedisIcon, SocketIcon } from "./assets/icons/Languages";
+import { CodeSlashIcon } from "./assets/icons/Utilities";
 
 // https://tailwindcss-animations.vercel.app/
 // https://console.cloud.google.com/marketplace/product/google/gmail.googleapis.com?pli=1
@@ -24,7 +27,7 @@ function App() {
   return (
     <main className="mx-auto max-w-screen-lg">
       {/* home */}
-      <Home />
+      <Home/>
 
       <AboutMe/>
 
@@ -33,19 +36,21 @@ function App() {
         <Skills />
       </section> */}
       {/* Experience */}
-      <Experience />
+      <Experience/>
 
       {/* Projects */}
-      <h2 className="text-textForeground text-3xl font-bold m-8 mb-4 lg:m-16 lg:mb-4">Projects</h2>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-8 lg:mx-16">
+      <h2 className="text-textForeground text-3xl font-bold m-8 mb-4 lg:m-16 lg:mb-4 flex gap-x-5 items-center"> <CodeSlashIcon className={"h-8"}/> Projects</h2>
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-8 lg:mx-16" id="Projects">
         <Projects
-          url={"https://pagedone.io/asset/uploads/1688031162.jpg"}
+          path={"/projects/Kind.webp"}
           projectName={"KindMail"}
           description={`My final year project involved utilizing Redis and Socket.io (WebSockets) to develop a real-time chat application.`}
+          alt={""}
+          url={"https://github.com/mnsempty/KindMail.git"}
         >
-          <ReactIcon className="w-8 h-10 fill-accentColor" />
-          <RedisIcon className="w-8 h-10 fill-accentColor" />
-          <SocketIcon className="w-8 h-10 fill-accentColor" />
+          <ReactIcon className="w-8 h-10 fill-accentColor dark:fill-primary-400" />
+          <RedisIcon className="w-8 h-10 fill-accentColor dark:fill-primary-400" />
+          <SocketIcon className="w-8 h-10 fill-accentColor dark:fill-primary-400" />
         </Projects>
       </section>
     </main>

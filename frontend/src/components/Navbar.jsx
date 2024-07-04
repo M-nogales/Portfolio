@@ -1,11 +1,12 @@
 import { useState } from "react";
+
 import { HamburguerMenu, XMark } from "../assets/icons/Utilities";
 
 import NavContent from "./NavContent.jsx";
 const Navbar = () => {
   const content = {
     text: ["Home", "About me", "Experience", "Projects"],
-    link: ["google.com"],
+    link: ["#Home","#About_Me","#Experience","#Projects"],
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
   console.log("modal" + isModalOpen);

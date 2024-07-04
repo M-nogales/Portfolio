@@ -1,7 +1,9 @@
+import { PersonCheckIcon } from "../assets/icons/Utilities";
+
 export const AboutMe = () => {
   return (
-    <section className="m-8 lg:m-16">
-      <h2 className="text-textForeground text-3xl font-bold mb-4">About Me</h2>
+    <section className="m-8 lg:m-16" id="About_Me">
+      <h2 className="text-textForeground text-3xl font-bold mb-4 flex gap-x-5 items-center"><PersonCheckIcon className={"h-8"} /> About Me</h2>
       <p className="mb-4 text-base font-normal text-textForeground">
         Hello, my name is Manuel Nogales Serrano, but everyone calls me <strong className="text-accentColor">Manu</strong>.
         I&apos;ve been a programmer since I was <strong className="text-accentColor">16 years old</strong>, thanks to my
