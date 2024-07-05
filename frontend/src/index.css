@@ -17,7 +17,6 @@
     --color-primary-950: #0f2842;
     --background: #f2f8fd;
     --text-foreground: #0B1E31;
-    --title-foreground: #c1ddf6;
     --accent-color:#2687d1
   }
   [data-theme="dark"] {
@@ -29,53 +28,9 @@
 
 /* font families */
 @font-face {
-  font-family: "Coolvetica Condensed RG";
-  src: url("./assets/fonts/CoolveticaCondensedRG.otf") format("opentype");
+  font-family: "Onest Variable";
+  src: url("./assets/fonts/Onest-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Coolvetica RG It";
-  src: url("./assets/fonts/CoolveticaRGIt.otf") format("opentype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Coolvetica RG";
-  src: url("./assets/fonts/CoolveticaRG.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Helvetica";
-  src: url("./assets/fonts/Helvetica.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Helvetica Compressed";
-  src: url("./assets/fonts/helvetica-compressed.otf")
-    format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Helvetica Light";
-  src: url("./assets/fonts/helvetica-light.ttf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Helvetica Bold";
-  src: url('./assets/fonts/Helvetica-Bold.ttf') format("truetype");
-  font-weight: bold;
   font-style: normal;
 }
 }

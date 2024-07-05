@@ -41,7 +41,7 @@ export const EmailModal = () => {
     showModal && (
       <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-50">
         <div className="bg-white dark:bg-slate-900 p-4 pt-2 grid rounded-lg w-1/2">
-          <button className="py-2 rounded place-self-end" onClick={handleCloseModal}>
+          <button aria-label="close modal" className="py-2 rounded place-self-end" onClick={handleCloseModal}>
             <XMark className={"w-6 h-6 text-black dark:text-white"} />
           </button>
           <form onSubmit={handleSubmit}>
@@ -99,12 +99,12 @@ export const EmailModal = () => {
               </label>
             </div>
             <div className="w-full mt-16 flex justify-center">
-              <button
-                className="ring-2 ring-primary-400 hover:bg-primary-400 dark:ring-primary-500 dark:hover:bg-primary-500 text-textForeground hover:text-white px-4 py-2 rounded w-1/2"
+              <button aria-label="submit form"
+                className="ring-2 ring-primary-400 hover:bg-primary-400 dark:ring-primary-500 dark:hover:bg-primary-400 text-textForeground hover:text-white px-4 py-2 rounded w-1/2"
               >
                 Submit
               </button>
-              <button className="mx-2 py-2 px-4 hover:underline underline-offset-3 decoration-2 decoration-red-600 text-red-600 w-1/2"
+              <button aria-label="close modal" className="mx-2 py-2 px-4 rounded-lg hover:bg-red-500 text-textForeground hover:text-black decoration-2 decoration-red-600 text-red-600 w-1/2"
               onClick={handleCloseModal}>
                 Cancel
               </button>

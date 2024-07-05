@@ -9,16 +9,19 @@ const Navbar = () => {
     link: ["#Home","#About_Me","#Experience","#Projects"],
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
-  console.log("modal" + isModalOpen);
-  console.log("content nav" + JSON.stringify(content));
+  const closeModal = () => {
+    setIsModalOpen(!isModalOpen);
+    console.log("closed modal");
+  };
   return (
-    <header className="w-full mt-1 mb-9 bg-transparent flex items-center justify-end md:justify-center">
-      <nav className="hidden sm:block"><NavContent content={content}></NavContent></nav>
+    <header className="w-full mt-1 mb-9 bg-transparent flex items-center justify-end sm:justify-center">
+      <nav className="hidden sm:block"><NavContent content={content} /></nav>
       {/* <!-- Mobile menu button--> */}
       <button
+      aria-label="open navigation"
         type="button"
         className="sm:hidden relative inline-flex items-center justify-center rounded-md p-4 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-        onClick={() => setIsModalOpen(!isModalOpen)}
+        onClick={closeModal}
       >
         {/* Hamburguer icon or Xmark with click */}
         {!isModalOpen ? <HamburguerMenu className={"w-8 h-8"}/> : <XMark className={"w-8 h-8"}/>}
@@ -35,6 +38,7 @@ const Navbar = () => {
             {/* <!-- Modal header --> */}
             <div className="flex items-center justify-between p-4 dark:border-gray-600">
               <button
+               aria-label="open navigation"
                 type="button"
                 className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-md text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
                 data-modal-hide="default-modal"
@@ -46,7 +50,7 @@ const Navbar = () => {
             </div>
             {/* <!-- Modal body --> */}
             <div className="p-4 flex flex-col items-center">
-              <NavContent content={content}></NavContent>
+              <NavContent content={content} closeModal={closeModal}/>
             </div>
           </div>
         </div>
