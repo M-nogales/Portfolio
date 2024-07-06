@@ -14,7 +14,7 @@ const Projects = ({path, url, alt, w, h, children, projectName, description}) =>
             src={path}
             alt={alt}
           />
-          <a aria-label="see code on github" href={url} target="_blank" rel="noopener noreferrer" className="bg-gray-500 text-white absolute top-7 right-8 rounded-full py-2 px-4 hidden group-hover:block"><ArrowIcon className={"w-6 h-6 fill-white origin-center -rotate-45"}/></a>
+          <a aria-label="see code on github" href={url} target="_blank" rel="noopener noreferrer" className="bg-gray-500 text-white absolute top-4 right-8 rounded-full py-2 px-4 hidden group-hover:block"><ArrowIcon className={"w-6 h-6 fill-white origin-center -rotate-45"}/></a>
           <p className="text-white absolute top-1/3 left-8 me-3 hidden group-hover:block">
           {description}
           </p>
