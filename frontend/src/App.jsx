@@ -9,8 +9,6 @@ import Projects from "./components/Projects";
 import { ReactIcon, RedisIcon, SocketIcon } from "./assets/icons/Languages";
 import { CodeSlashIcon } from "./assets/icons/Utilities";
 
-// https://tailwindcss-animations.vercel.app/
-// https://console.cloud.google.com/marketplace/product/google/gmail.googleapis.com?pli=1
 function App() {
   useEffect(() => {
     const prefersDarkScheme = window.matchMedia(
@@ -44,7 +42,7 @@ function App() {
         <Projects
           path={"/projects/Kind.webp"}
           projectName={"KindMail"}
-          description={`My final year project involved utilizing Redis and Socket.io (WebSockets) to develop a real-time chat application.`}
+          description={`My final year project involved utilizing Redis and Socket.io to develop a real-time chat application.`}
           alt={"Image of the chat user interface"}
           url={"https://github.com/mnsempty/KindMail.git"}
           w="440" 

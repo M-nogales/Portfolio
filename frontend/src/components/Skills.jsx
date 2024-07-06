@@ -48,12 +48,6 @@ const Skills = () => {
             </div>
           </div>
         </article>
-
-        {/* <p>frontend: React figma tailwind</p>
-      <p>backend: express mongoDB</p>
-      <h3>Otra tecnologias que he utilizado</h3>
-      <p>python,php,laravel,sass,figma,</p>
-      <p>docker,Sql,Redis,Socket.io(WebSockets),java,nodejs,git/github</p> */}
       </div>
     </>
   );

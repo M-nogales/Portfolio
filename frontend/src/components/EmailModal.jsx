@@ -3,7 +3,7 @@ import { XMark } from "../assets/icons/Utilities";
 import { ModalContext } from "../context/Modal";
 
 /* eslint-disable react/prop-types */
-// showModal bolean showModal or not modal, handleCloseModal function changes showModal State
+// showModal=bolean, handleCloseModal function changes showModal State
 export const EmailModal = () => {
   const { showModal, handleCloseModal } = useContext(ModalContext);
   const [formData, setFormData] = useState({

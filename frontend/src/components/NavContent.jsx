@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { ModalContext } from "../context/Modal";
 /* eslint-disable react/prop-types */
 const NavContent = ({content, closeModal}) => {
-  // Hook para usar el contexto
+  // ModalContext para contactModal
   const { handleModal } = useContext(ModalContext);
-  //prop drilling para cerrar el modal del navbar
+// navbar modal, only on mobile
   const handleClick = () => {
     if (closeModal) {
       closeModal();

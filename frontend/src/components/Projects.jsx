@@ -23,7 +23,6 @@ const Projects = ({path, url, alt, w, h, children, projectName, description}) =>
             <h2 className="mt-1 md:mt-4 text-lg md:text-xl font-semibold capitalize text-gray-800 dark:text-white">
               {projectName}
             </h2>
-            {/* finish this */}
             <div className="mt-2 flex gap-x-2">
             {children}
             </div>

@@ -11,7 +11,6 @@ const Navbar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const closeModal = () => {
     setIsModalOpen(!isModalOpen);
-    console.log("closed modal");
   };
   return (
     <header className="w-full mt-1 mb-9 bg-transparent flex items-center justify-end sm:justify-center">
