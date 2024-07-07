@@ -31,7 +31,7 @@ const Home = () => {
         <span ref={typingRef}></span>
       </p>
       <footer className="m-6 flex gap-x-2 items-center">
-        <a href="../assets/CV" download="/CV/CV_2024" className="ps-6 pe-4 py-3 rounded-lg text-textForeground will-change-transform hover:bg-primary-400 hover:text-white ring-2 ring-primary-500 flex gap-x-2 ">
+        <a href="/download/CV_Manuel_Nogales_Serrano.pdf" download="CV_Manuel_Nogales_Serrano.pdf" className="ps-6 pe-4 py-3 rounded-lg text-textForeground will-change-transform hover:bg-primary-400 hover:text-white ring-2 ring-primary-500 flex gap-x-2 ">
           Download CV
           <DownloadIcon className={" ms-2 w-5 h-5 fill-current "} />
         </a>
