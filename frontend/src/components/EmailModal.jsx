@@ -40,7 +40,7 @@ export const EmailModal = () => {
   return (
     showModal && (
       <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black bg-opacity-50">
-        <div className="bg-white dark:bg-slate-900 p-4 pt-2 grid rounded-lg w-1/2">
+        <div className="bg-white dark:bg-slate-900 p-4 pt-2 grid rounded-lg w-2/3 md:w-1/2">
           <button aria-label="close modal" className="py-2 rounded place-self-end" onClick={handleCloseModal}>
             <XMark className={"w-6 h-6 text-black dark:text-white"} />
           </button>
